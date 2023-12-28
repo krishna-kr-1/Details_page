@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Website</title>
+    <style>
+        .submit
+        {
+            text-align: center;
+            
+        }
+        .basic
+        {
+            background-color: rgb(163, 163, 233);
+            margin-left: 5px;
+            border-radius: 5%;
+        }
+        .reg
+        {
+            margin-top: 0%;
+            border: 2px solid rgb(163, 163, 233)
+        }
+        p{
+            margin: 0;
+        }
+        .basicx
+        {
+            background-color: rgb(163, 163, 233);
+        }
+        #man
+        {
+            margin-left: 5px;
+        }
+        .captcha
+        {
+            margin-left:230px ;
+            font-size: 2rem;
+        }
+        .re
+        {
+            color: rgb(115, 218, 218);
+            margin-left: 230px;
+        }
+        #last
+        {
+            color: rgb(115, 218, 218);
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p class="basicx reg"> Individual Registration</p>
+    <div class="reg">
+        <p  id="man" style="color: red;"><br>*mandetory</p>
+        <div class="basic">
+            <p>GARBAGE/JUNK VALUES IN PROFILE MAY LEAD TO DEACTIVATION </br> Please use a valid E-mail ID and Mobile number for registration</br></p>
+        </div>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        USER ID<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="text" name="user_id" ><span style="color: rgb(115, 218, 218)"><u>check aviliablity</u></span> 
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+
+                    </td>
+                    <td style="font-size: small;">
+                        Between 3 to characters only letter , number and underscore are allowed
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        Password<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="password" name="pwd">
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        Min 8 characters Max 15 characters. Password must contain atleat one lower case and 1 upper case and numeric digit .
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        Confirm Password<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="password" name="con_pwd">
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        
+                    </td>
+                 </tr>
+            </table>
+            <p style="color: rgb(115, 218, 218);">If you forgot your password, we will identify you with this information </p>
+            <table>
+                <tr>
+                    <td>
+                        Security Question<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <select name="Security Question">
+                            <option value="What is your pet name">What is your pet name</option>
+                            <option value="First Friend">What is the name of your firts Friend</option>
+                            <option value="First School">What the name of you First School</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Security Answer<span style="color: red;">*</span> 
+                    </td>
+                    <td>
+                        <input type="password" name="pwd">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Preferred Language<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <select name="Language">
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="Bengali">Bengali</option>
+                            <option value="Bihari">Bihari</option>
+                    </td>
+                </tr>
+            </table>
+            <div class="basic">
+                <p>Personal Details </p>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        First Name <span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="text" name="First Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Middle Name
+                    </td>
+                    <td>
+                        <input type="text" name="Middile Name">(optional)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Last Name<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="text" name="Last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="radio" name="Gender" value="Male">Male
+                        <input type="radio" name="Gender" value="Female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Maritial Status<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="radio" name="Maritial status" value="Married">Married
+                        <input type="radio" name="Maritial status" value="Unmarried">Unmarried
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Date of Birth
+                    </td>
+                    <td>
+                        <input type="date" name="dob">(optional)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Occupation<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="text" name="Occupation" id="Occupation">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Adhar Number<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="number" name="Adhar_NUM">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PAN CARD<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="text" name="pan_num">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Mobile<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        +91<input type="number" name="mob">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nationality<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <select name="Nationality">
+                            <option value="Indian">Indian</option>
+                            <option value="Other">Other</option>
+                    </td>
+                </tr>
+            </table>
+            <div class="basic">
+                <p>Residential Address </p>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        Flat/Door/Block Number<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="text" name="address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Street/Lane
+                    </td>
+                    <td>
+                        <input type="text"  name="lane">(optional)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Area/Locality
+                    </td>
+                    <td>
+                        <input type="text" name="Locality">(optional)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Country<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <select name="Nation">
+                            <option value="India">India</option>
+                            <option value="Other">Other</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PIN code<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="number" name="pin">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        State<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <select name="State">
+                            <option value="West Bengal">West Bengal</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Other">Other</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        City/Town<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="text" name="city">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Post Office<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="text" name="PO">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="number" name="Phone    ">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: rgb(115, 218, 218);">
+                        copy Residence to Office Address
+                    </td>
+                    <td>
+                        <input type="radio" name="Yes" >Yes
+                        <input type="radio" name="No">NO
+                    </td>
+                </tr>
+            </table>
+            <p class="captcha ">YAD9K</p>
+            <p class="re">refresh</p>
+            <table>
+                <tr>
+                    <td>
+                        Type code shown
+                    </td>
+                    <td>
+                        <input type="text" name="captcga">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        captcha letters are case sensetive and to be entered in upper case only 
+                    </td>
+                </tr>
+            </table>
+            <div class="basic">
+                <p style="color: green;" >Subscription to IRCTC New letter/Promotion letter/IRCTC SBI cards through Email /SMS</p>
+            </div>
+           <table>
+            <tr>
+                <td id="last">
+                    IRCTC Newsletters
+                </td>
+                <td>
+                    <input type="radio" name="news" value="Yes">Yes
+                    <input type="radio" name="news" value="No">No
+                </td>
+            </tr>
+            <tr>
+                <td id="last">
+                    Commertial Promotion 
+                </td>
+                <td>
+                    <input type="radio" name="news" value="Yes">Yes
+                    <input type="radio" name="news" value="No">No
+                </td>
+            </tr>
+            <tr>
+                <td id="last">
+                    Please Inform me about IRCTC SBI Cards Through phone*
+                </td>
+                <td>
+                    <input type="radio" name="news" value="Yes">Yes
+                    <input type="radio" name="news" value="No">No
+                </td>
+            </tr>
+           </table>
+           <p class="basic submit"><input type="submit" name="ok"  value="Submit Registration Form >>>"  ></p>
+                
+        </form>
+    </div>
+</body>
+</html>
